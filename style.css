@@ -1,0 +1,148 @@
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Secular+One&display=swap');
+
+/* common styel and utilities */
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #F3F1FF;
+
+}
+/* header style */
+
+header{
+    margin-left: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+/* first section */
+.container{
+    background-color: #FFFFFF;
+    width: 80%;
+    padding: 30px; ;
+    border-radius: 5px;
+    margin-top: 21px;
+}
+
+.article-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+.container>.article-1 h1{
+    font-size: 4em;
+} 
+.container>.article-1 p{
+    font-size: 20px;
+}
+.container>.article-1 img{
+    margin-left: 200px;
+}
+.container>.article-1 a{
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* second section */
+
+.container>.p1{
+    margin-left: 43%;
+    
+} 
+.container>.article-2 p{
+    font-size: 0.8em;
+}
+.container>.article-2>.products{
+        margin-left: 5%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);    
+}
+
+.container>.article-2>.products>.product{
+border: 2px solid red;
+border-radius: 10px;
+padding: 30px;
+margin-bottom: 20px;
+width:300px ;
+height: 500px;
+background-color: rgb(241, 237, 241);
+}
+.product img{
+    width: 300px;
+    height: 250px;
+}
+.container>.article-2 a{
+    margin-left: 87%;
+    padding: 10px;
+    background-color: orange;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+/* section-4 */
+
+
+
+.section-4{
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    background-color: black;   
+}
+.section-4>.footer-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+} 
+
+/* mobile devices */
+
+ @media only screen and (min-width:0px) and (max-width:576px)  {
+    .container{
+        width: 100%;
+    }
+    .article-1,.article-2, .products,.product{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .product{
+        flex-direction: column;
+    }
+
+    .section-4{
+        width: 100%;
+    }
+    
+}
+
+/* tablet devises */
+
+@media only screen and (min-width:576px) and (max-width:992px) {
+
+    .container{
+        width: 100%;
+    }
+    .article-1,.article-2{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product{
+        flex-direction: column;
+    }
+    .section-4{
+        width: 100%;
+    }
+
+} */
+
