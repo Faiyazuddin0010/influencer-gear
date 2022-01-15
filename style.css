@@ -129,10 +129,6 @@ background-color: rgb(241, 237, 241);
         grid-template-columns: repeat(1,1fr);
     }
 
-    .product{
-        flex-direction: column;
-    }
-
     .section-4{
         width: 100%;
     }
@@ -151,11 +147,8 @@ background-color: rgb(241, 237, 241);
     .container{
         width: 100%;
     }
-    .article-1,.article-2{
+    .article-1,.article-2, .products,.product{
         grid-template-columns: repeat(2,1fr);
-    }
-    .product{
-        flex-direction: column;
     }
     .section-4{
         width: 100%;
